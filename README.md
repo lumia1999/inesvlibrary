@@ -6,7 +6,7 @@
     
     
    2.changebutton属性
-     
+    
         <com.inesv.ce.view.ChangeButton
             android:id="@+id/login_login_cb"
             style="@style/base_btn_sty"
@@ -23,7 +23,8 @@
             
             
             
-   3.countdownview属性       
+   3.countdownview属性     
+   
         <com.inesv.ce.view.CountDownView
                 android:id="@+id/register_code_cv"
                 android:layout_width="@dimen/common_dimen_90"
@@ -45,4 +46,5 @@
                 
                 
      4.工具类
+     
        md5、shapeutil、toastutil、textutil
