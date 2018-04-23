@@ -23,6 +23,9 @@
             lumia:unstrokeWidth="1"
             lumia:untextColor="@color/base_text_light_gray" />
             
+            //把需要监听的文本放在加进来 这样当满足条件按钮就会改变样式
+            
+            changeButton.addTextView(xxx);//参数可以是textview或者edittext 
             
             
    3.countdownview属性     
@@ -46,7 +49,11 @@
                 lumia:unstrokeWidth="1"
                 lumia:untextColor="@color/base_text_light_gray" />
                 
+                countdownView.startCountDownView();//开始倒计时
                 
-     4.工具类
+                countdownView.cancelCountDownView();//取消倒计时
+     
+    
+    4.工具类
      
-       md5、shapeutil、toastutil、textutil
+       md5、shapeutil、toastutil、textutil、stringutil、logutil(需要设置开启打印log Logutil.isShowLog(true))
