@@ -1,6 +1,8 @@
 # inesvlibrary
 宏强科技
+
    1.使用方法
+   
     gradle  compile 'com.inesv.library:inesvlibrary:1.0.1' 
     
     
