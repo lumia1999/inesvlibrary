@@ -3,7 +3,7 @@
 
    1.使用方法
    
-    gradle  compile 'com.inesv.library:inesvlibrary:1.0.3' 
+    gradle  compile 'com.inesv.library:inesvlibrary:1.0.2' 
     
     
     
