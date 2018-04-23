@@ -2,6 +2,9 @@
 宏强科技
    1.使用方法
     gradle  compile 'com.inesv.library:inesvlibrary:1.0.1' 
+    
+    
+    
    2.changebutton属性
      
         <com.inesv.ce.view.ChangeButton
@@ -17,8 +20,11 @@
             lumia:unstrokeColor="@color/base_text_light_gray"
             lumia:unstrokeWidth="1"
             lumia:untextColor="@color/base_text_light_gray" />
-   3.countdownview属性        
-      <com.inesv.ce.view.CountDownView
+            
+            
+            
+   3.countdownview属性       
+        <com.inesv.ce.view.CountDownView
                 android:id="@+id/register_code_cv"
                 android:layout_width="@dimen/common_dimen_90"
                 android:layout_height="@dimen/common_dimen_30"
@@ -36,5 +42,7 @@
                 lumia:unstrokeColor="@color/base_text_light_gray"
                 lumia:unstrokeWidth="1"
                 lumia:untextColor="@color/base_text_light_gray" />
+                
+                
      4.工具类
        md5、shapeutil、toastutil、textutil
