@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'//需添加的
 apply plugin: 'com.jfrog.bintray'//需添加的
 
-version = "1.0.2" //需更改，这个是Library的版本后，每次更新的时候，版本需要不一样
+version = "1.0.3" //需更改，这个是Library的版本后，每次更新的时候，版本需要不一样
 
 android {
     compileSdkVersion 27
@@ -28,7 +28,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
