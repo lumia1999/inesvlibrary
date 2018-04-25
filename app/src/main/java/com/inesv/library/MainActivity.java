@@ -21,10 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Map<String, String> map = new HashMap<>();
-        map.put("a", "1");
-        map.put("b", "2");
-        map.put("c", "3");
-        map.put("d", "4");
         HttpUtil.getDataFromServer(map, "http://www.baidu.com", new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {

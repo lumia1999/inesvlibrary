@@ -66,10 +66,9 @@ public class JsonUtil {
      * 将map转换成json
      *
      * @param map
-     * @param <T>
      * @return
      */
-    public static <T> String map2Json(Map<String, String> map) {
+    public static String map2Json(Map<String, String> map) {
         if (map == null) {
             LogUtil.d(TAG, "bean2son:map不能为空!");
             return "";
