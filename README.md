@@ -3,7 +3,7 @@
 
    1.使用方法
    
-    gradle  compile 'com.inesv.library:inesvlibrary:1.0.2' 
+    gradle  compile 'com.inesv.library:inesvlibrary:1.1.4' 
     
     
     
@@ -57,3 +57,10 @@
     4.工具类
      
        md5、shapeutil、toastutil、textutil、stringutil、logutil(需要设置开启打印log Logutil.isShowLog(true))
+       
+       
+       
+       
+    5.混淆
+       -dontwarn com.inesv.library.**
+       -keep class com.inesv.library.**{*;}
