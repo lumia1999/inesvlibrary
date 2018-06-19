@@ -1,7 +1,6 @@
 package com.inesv.library.util;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
@@ -73,10 +72,7 @@ public class JsonUtil {
             LogUtil.d(TAG, "bean2son:map不能为空!");
             return "";
         }
-        Gson gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .disableHtmlEscaping()
-                .create();
+        Gson gson = new Gson();
         return gson.toJson(map);
     }
 }

@@ -35,6 +35,7 @@ public class ActivityUtil {
             intent.putExtras(bundle);
         }
         activity.startActivityForResult(intent, code);
+        // activity.overridePendingTransition();
     }
 
     /**
@@ -57,9 +58,9 @@ public class ActivityUtil {
      * @param context
      * @param activity
      */
-    public static void jumpLogin(Context context, Activity activity) {
+    public static void jumpLogin(Context context, Class<?> activity) {
         ActivityStackUtil.getScreenManager().clearAllActivity();
-        jumpActivity(context, activity.getClass());
+        jumpActivity(context, activity);
     }
 
     /**

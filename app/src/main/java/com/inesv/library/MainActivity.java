@@ -2,14 +2,12 @@ package com.inesv.library;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.inesv.library.util.GlideUtil;
 import com.inesv.library.util.HttpUtil;
 import com.inesv.library.util.JsonUtil;
-import com.inesv.library.util.LogUtil;
 import com.inesv.library.util.ShapeUtil;
 
 import java.io.IOException;
