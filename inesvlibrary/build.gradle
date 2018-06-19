@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'//需添加的
 apply plugin: 'com.jfrog.bintray'//需添加的
 
-version = "1.1.4" //需更改，这个是Library的版本后，每次更新的时候，版本需要不一样
+version = "1.1.6" //需更改，这个是Library的版本后，每次更新的时候，版本需要不一样
 
 android {
     signingConfigs {
@@ -28,7 +28,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //glide图片加载器
-    compile 'com.github.bumptech.glide:glide:3.5.2'
+    implementation 'com.github.bumptech.glide:glide:3.5.2'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation 'com.google.code.gson:gson:2.8.5'
     //二维码

@@ -9,6 +9,7 @@ import com.inesv.library.util.GlideUtil;
 import com.inesv.library.util.HttpUtil;
 import com.inesv.library.util.JsonUtil;
 import com.inesv.library.util.ShapeUtil;
+import com.inesv.library.util.ToastUtil;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -33,8 +34,9 @@ public class MainActivity extends Activity {
             }
 
             @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                JsonUtil.json2Bean(response.body().toString(),Call.class);
+            public void onResponse(Call call, Response response) {
+                JsonUtil.json2Bean(response.body().toString(), Call.class);
+                ToastUtil.showShortToast(MainActivity.this, "测试版");
                 //LogUtil.e("MainActivity","response:"+response.body().string());
             }
         });
@@ -44,5 +46,6 @@ public class MainActivity extends Activity {
         tv.setBackground(ShapeUtil.commonShape(this, r, -1, R.color.colorAccent, -1));
         ImageView iv = findViewById(R.id.iv);
         GlideUtil.loadCircleImage(this, "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1529547806&di=be9375221f76750b813a98af8ad074ca&imgtype=jpg&er=1&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Faec379310a55b319905cccbc46a98226cefc1755.jpg", iv);
+        ToastUtil.showShortToast(this, "哈麻批");
     }
 }

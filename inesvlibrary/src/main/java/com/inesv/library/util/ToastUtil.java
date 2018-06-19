@@ -1,6 +1,7 @@
 package com.inesv.library.util;
 
 import android.content.Context;
+import android.os.Looper;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +26,10 @@ public class ToastUtil {
 
 
     public static void showToast(Context context, String text, int time) {
+        boolean isMainThread = Looper.myLooper() == Looper.getMainLooper();
+        if (!isMainThread) {
+            Looper.prepare();
+        }
         LayoutInflater mInflate = LayoutInflater.from(context);
         View view = mInflate.inflate(R.layout.layout_toast, null);
         TextView textView = view.findViewById(R.id.chapterName);
@@ -34,6 +39,9 @@ public class ToastUtil {
         toast.setDuration(time);
         toast.setView(view);
         toast.show();
+        if (!isMainThread) {
+            Looper.loop();
+        }
     }
 
     public static void showShortToast(Context context, String text) {
